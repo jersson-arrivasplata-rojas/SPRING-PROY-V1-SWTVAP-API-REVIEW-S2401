@@ -11,4 +11,5 @@ public class ReviewResponse {
     private Long score;
     private String comment;
     private LocalDate reviewDate;
+    private Product product;
 }

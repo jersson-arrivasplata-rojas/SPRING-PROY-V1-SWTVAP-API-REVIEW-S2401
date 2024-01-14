@@ -51,5 +51,5 @@ public class Product {
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     @JsonIgnore
-    private Set<Review> productComments;
+    private Set<Comment> productComments;
 }

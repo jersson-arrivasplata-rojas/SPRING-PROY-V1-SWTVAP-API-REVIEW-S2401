@@ -1,5 +1,6 @@
 package com.jersson.arrivasplata.swtvap.api.review.expose.controllers;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

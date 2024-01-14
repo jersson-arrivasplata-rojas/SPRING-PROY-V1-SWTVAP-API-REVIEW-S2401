@@ -13,4 +13,5 @@ public class CommentResponse {
     private LocalDate commentDate;
     private LocalDate createdDate;
     private LocalDate deletedDate;
+    private Product product;
 }
