@@ -1,8 +1,8 @@
-package com.jersson.arrivasplata.swtvap.api.comment.business.service;
-
-import com.jersson.arrivasplata.swtvap.api.review.model.Comment;
+package com.jersson.arrivasplata.swtvap.api.review.business.service;
 
 import java.util.List;
+
+import com.jersson.arrivasplata.swtvap.api.review.model.Comment;
 
 public interface CommentService {
     List<Comment> getAllComments();

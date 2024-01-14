@@ -1,12 +1,13 @@
 package com.jersson.arrivasplata.swtvap.api.review.business.implementation;
 
-import com.jersson.arrivasplata.swtvap.api.comment.business.service.CommentService;
-import com.jersson.arrivasplata.swtvap.api.review.model.Comment;
-import com.jersson.arrivasplata.swtvap.api.review.repository.CommentRepository;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.jersson.arrivasplata.swtvap.api.review.business.service.CommentService;
+import com.jersson.arrivasplata.swtvap.api.review.model.Comment;
+import com.jersson.arrivasplata.swtvap.api.review.repository.CommentRepository;
 
 
 @Service
