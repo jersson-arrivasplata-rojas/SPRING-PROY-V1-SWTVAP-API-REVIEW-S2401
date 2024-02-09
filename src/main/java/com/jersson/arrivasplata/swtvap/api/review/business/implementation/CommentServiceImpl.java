@@ -2,6 +2,7 @@ package com.jersson.arrivasplata.swtvap.api.review.business.implementation;
 
 import java.util.List;
 
+import com.jersson.arrivasplata.swtvap.api.review.enums.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,6 +38,11 @@ public class CommentServiceImpl implements CommentService {
     }
 
     public void deleteCommentById(Long id) {
-        commentRepository.deleteById(id);
+        Comment comment = commentRepository.findById(id).orElse(null);
+        if (comment == null) {
+            return;
+        }
+        comment.setStatus(Status.INACTIVE);
+        commentRepository.save(comment);
     }
 }

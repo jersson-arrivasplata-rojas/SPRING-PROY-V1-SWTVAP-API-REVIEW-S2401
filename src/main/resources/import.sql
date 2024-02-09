@@ -13,7 +13,8 @@ INSERT INTO "public"."swtvap_reviews" (id, product_id, score, comment, review_da
 INSERT INTO "public"."swtvap_reviews" (id, product_id, score, comment, review_date) VALUES (4, 2, 4, 'Good product', '2020-01-04');
 
 
-INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, comment_date, created_date, deleted_date) VALUES (1, 1, null, 'Good product', '2020-01-01', '2020-01-01', null);
-INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, comment_date, created_date, deleted_date) VALUES (2, 1, 1, 'Great product', '2020-01-02', '2020-01-02', null);
-INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, comment_date, created_date, deleted_date) VALUES (3, 1, 2, 'Average product', '2020-01-03', '2020-01-03', null);
-INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, comment_date, created_date, deleted_date) VALUES (4, 2, null, 'Good product', '2020-01-04', '2020-01-04', null);
+INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, type, name, status, comment_date, created_date, deleted_date) VALUES (1, 1, null, 'Good product', 0, 'Jersson', 1, '2020-01-01', '2020-01-01', null);
+INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, type, name, status, comment_date, created_date, deleted_date) VALUES (2, 1, 1, 'Great product', 0, 'Jesus', 1, '2020-01-02', '2020-01-02', null);
+INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, type, name, status, comment_date, created_date, deleted_date) VALUES (3, 1, 1, 'Average product', 1, 'Giomar', 1, '2020-01-03', '2020-01-03', null);
+INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, type, name, status, comment_date, created_date, deleted_date) VALUES (4, 1, 2, 'Average product', 0, 'Pedro', 1, '2020-01-03', '2020-01-03', null);
+INSERT INTO "public"."swtvap_comments" (id, product_id, reply_comment_id, comment, type, name, status, comment_date, created_date, deleted_date) VALUES (5, 2, null, 'Good product', 0, 'David', 1, '2020-01-04', '2020-01-04', null);

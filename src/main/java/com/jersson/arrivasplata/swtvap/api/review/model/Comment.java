@@ -1,5 +1,7 @@
 package com.jersson.arrivasplata.swtvap.api.review.model;
 
+import com.jersson.arrivasplata.swtvap.api.review.enums.Status;
+import com.jersson.arrivasplata.swtvap.api.review.enums.Type;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -22,6 +24,15 @@ public class Comment {
 
     @Column(columnDefinition = "TEXT")
     private String comment;
+
+    @Enumerated(EnumType.ORDINAL)
+    private Type type;
+
+    @Column(name = "name", length = 200)
+    private String name;
+
+    @Enumerated(EnumType.ORDINAL)
+    private Status status;
 
     @Column(name = "comment_date")
     private LocalDate commentDate;

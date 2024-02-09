@@ -16,6 +16,9 @@ public interface CommentMapper {
 
     CommentRequest commentToCommentRequest(Comment comment);
 
+    @Mapping(target = "type", source = "comment.type")
+    @Mapping(target = "name", source = "comment.name")
+    @Mapping(target = "status", source = "comment.status")
     CommentResponse commentToCommentResponse(Comment comment);
 
     List<CommentResponse> mapCommentsToResponses(List<Comment> comments);
