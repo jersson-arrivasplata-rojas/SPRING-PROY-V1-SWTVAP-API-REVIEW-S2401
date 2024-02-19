@@ -28,6 +28,9 @@ public class Review {
     @Column(name = "review_date")
     private LocalDate reviewDate;
 
+    @Column(name = "deleted_at")
+    private LocalDate deletedAt;
+
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id", insertable = false, updatable = false)
     private Product product;
