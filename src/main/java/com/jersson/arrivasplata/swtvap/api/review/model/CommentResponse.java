@@ -15,8 +15,8 @@ public class CommentResponse {
     private Type type;
     private String name;
     private Status status;
-    private LocalDate commentDate;
-    private LocalDate createdDate;
-    private LocalDate deletedDate;
+    private LocalDate commentAt;
+    private LocalDate createdAt;
+    private LocalDate deletedAt;
     private Product product;
 }

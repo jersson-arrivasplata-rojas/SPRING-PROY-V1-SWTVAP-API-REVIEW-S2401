@@ -10,7 +10,7 @@ public class ReviewRequest {
     private Long productId;
     private Long score;
     private String comment;
-    private LocalDate reviewDate;
+    private LocalDate reviewAt;
     private LocalDate deletedAt;
     private Product product;
 }

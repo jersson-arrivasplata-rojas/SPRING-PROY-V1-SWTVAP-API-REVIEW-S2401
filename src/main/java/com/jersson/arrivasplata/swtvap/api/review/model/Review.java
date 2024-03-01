@@ -25,8 +25,8 @@ public class Review {
     @Column(columnDefinition = "TEXT")
     private String comment;
 
-    @Column(name = "review_date")
-    private LocalDate reviewDate;
+    @Column(name = "review_at")
+    private LocalDate reviewAt;
 
     @Column(name = "deleted_at")
     private LocalDate deletedAt;

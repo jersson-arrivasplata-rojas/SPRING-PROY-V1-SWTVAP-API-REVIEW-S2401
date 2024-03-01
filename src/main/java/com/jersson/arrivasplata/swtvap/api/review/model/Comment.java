@@ -34,14 +34,14 @@ public class Comment {
     @Enumerated(EnumType.ORDINAL)
     private Status status;
 
-    @Column(name = "comment_date")
-    private LocalDate commentDate;
+    @Column(name = "comment_at")
+    private LocalDate commentAt;
 
-    @Column(name = "created_date")
-    private LocalDate createdDate;
+    @Column(name = "created_at")
+    private LocalDate createdAt;
 
-    @Column(name = "deleted_date")
-    private LocalDate deletedDate;
+    @Column(name = "deleted_at")
+    private LocalDate deletedAt;
 
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id", insertable = false, updatable = false)

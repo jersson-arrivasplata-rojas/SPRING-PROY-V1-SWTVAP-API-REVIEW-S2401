@@ -3,6 +3,7 @@ package com.jersson.arrivasplata.swtvap.api.review.business.implementation;
 import java.util.List;
 
 import com.jersson.arrivasplata.swtvap.api.review.enums.Status;
+import com.jersson.arrivasplata.swtvap.api.review.util.Common;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,6 +44,7 @@ public class CommentServiceImpl implements CommentService {
             return;
         }
         comment.setStatus(Status.INACTIVE);
+        comment.setDeletedAt(Common.builder().build().getCurrentDate());
         commentRepository.save(comment);
     }
 }
